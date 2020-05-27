@@ -1,0 +1,242 @@
+#include <stdio.h>
+main(){
+	int num2,num1,v,v2;
+	float valor,res;
+	
+	printf("Bem vindo ao conversor de moedas!!!\nAqui fazemos o trabalho todo para voce!!!\nEscolha a opcao que lhe ajudara:\n");
+	printf("\nObserve a seguinte tabela e selecione a moeda de sua posse:\n");
+	printf("[1]Cobre\n[2]Prata\n[3]Electro\n[4]Ouro\n[5]Platina\n[6]Rubi\n[7]Diamante\n");
+	scanf("%d",&num1);
+	switch(num1){
+		case 1:printf("A moeda escolhida foi cobre"); v=1;
+			break;
+			case 2:printf("A moeda escolhida foi prata"); v=2;
+			break;
+			case 3:printf("A moeda escolhida foi electro");v=3;
+			break;
+			case 4:printf("A moeda escolhida foi ouro"); v=4;
+			break;
+			case 5:printf("A moeda escolhida foi platina");v=5;
+			break;
+			case 6:printf("A moeda escolhida foi rubi");v=6;
+			break;
+			case 7:printf("A moeda escolhida foi diamante");v=7;
+			break;
+			default:printf("Nao existe esta moeda");}
+			
+		printf("\n\nAgora selecione o tipo de moeda para a conversao:\n");
+		printf("[1] Para cobre\n[2] Para Prata\n[3] Para Electro\n[4] Para Ouro\n[5] Para Platina\n[6] Para Rubi\n[7] Para Diamante\n");
+		scanf("%d",&num2);
+		switch(num2){
+			case 1: printf("O valor sera convertido em Cobre\n");v2=1;
+			break;
+			case 2: printf("O valor sera convertido em Prata\n");v2=2;
+			break;
+			case 3: printf("O valor sera convertido em Electro\n");v2=3;
+			break;
+			case 4: printf("O valor sera convertido em Ouro\n");v2=4;
+			break;
+			case 5: printf("O valor sera convertido em Platina\n");v2=5;
+			break;
+			case 6: printf("O valor sera convertido em Rubi\n");v2=6;
+			break;
+			case 7: printf("O valor sera convertido em Diamante\n");v2=7;
+			break;
+			default:printf("Nao existe este tipo de conversao!\n");
+	}
+	
+		////////////////////////////////////////////////////////////////////////
+	
+	printf("\nInsira o valor que deseja converter: ");
+	scanf("%f",&valor);
+	if(v==1 && v2==2){
+	valor=(valor/10);
+		printf("O resultado eh %0.3f moedas de Prata",valor);
+	}
+	else if(v==1 && v2==3){
+	valor=(valor/50);
+		printf("O resultado eh %0.3f moedas de Electro",valor);
+	}
+	else if(v==1 && v2==4){
+	valor=(valor/100);
+		printf("O resultado eh %0.3f moedas de Ouro",valor);
+	}
+	else if(v==1 && v2==5){
+	valor=(valor/1000);
+		printf("O resultado eh %0.3f moedas de Platina",valor);
+	}
+	
+	else if(v==1 && v2==6){
+	valor=(valor/10000);
+		printf("O resultado eh %0.3f moedas de Rubi",valor);
+	}
+	else if(v==1 && v2==7){
+	valor=(valor/100000);
+		printf("O resultado eh %0.3f moedas de Diamante",valor);
+	}
+	/////////////////////////////////////////////////////////////////////
+	if(v==2 && v2==1){
+	valor=(valor*10);
+		printf("O resultado eh %0.2f moedas de Cobre",valor);
+	}
+	else if(v==2 && v2==3){
+	valor=(valor/5);
+		printf("O resultado eh %0.3f moedas de Electro",valor);
+	}
+	else if(v==2 && v2==4){
+	valor=(valor/10);
+		printf("O resultado eh %0.3f moedas de Ouro",valor);
+	}
+	else if(v==2 && v2==5){
+	valor=(valor/100);
+		printf("O resultado eh %0.3f moedas de Platina",valor);
+	}
+	
+	else if(v==2 && v2==6){
+	valor=(valor/1000);
+		printf("O resultado eh %0.3f moedas de Rubi",valor);
+	}
+	else if(v==2 && v2==7){
+	valor=(valor/10000);
+		printf("O resultado eh %0.3f moedas de Diamante",valor);
+	}
+	///////////////////////////////////////////////////////////////////
+	if(v==3 && v2==1){
+	valor=(valor*50);
+		printf("O resultado eh %0.2f moedas de Cobre",valor);
+	}
+	else if(v==3 && v2==2){
+	valor=(valor*5);
+		printf("O resultado eh %0.2f moedas de Prata",valor);
+	}
+	else if(v==3 && v2==4){
+	valor=(valor/2);
+		printf("O resultado eh %0.3f moedas de Ouro",valor);
+	}
+	else if(v==3 && v2==5){
+	valor=(valor/20);
+		printf("O resultado eh %0.3f moedas de Platina",valor);
+	}
+	
+	else if(v==3 && v2==6){
+	valor=(valor/200);
+		printf("O resultado eh %0.3f moedas de Rubi",valor);
+	}
+	else if(v==3 && v2==7){
+	valor=(valor/2000);
+		printf("O resultado eh %0.3f moedas de Diamante",valor);
+	}
+	
+	///////////////////////////////////////////////////////////////////
+	if(v==4 && v2==1){
+	valor=(valor*100);
+		printf("O resultado eh %0.2f moedas de Cobre",valor);
+	}
+	else if(v==4 && v2==2){
+	valor=(valor*10);
+		printf("O resultado eh %0.2f moedas de Prata",valor);
+	}
+	else if(v==4 && v2==3){
+	valor=(valor*2);
+		printf("O resultado eh %0.2f moedas de Electro",valor);
+	}
+	else if(v==4 && v2==5){
+	valor=(valor/10);
+		printf("O resultado eh %0.3f moedas de Platina",valor);
+	}
+	
+	else if(v==4 && v2==6){
+	valor=(valor/100);
+		printf("O resultado eh %0.3f moedas de Rubi",valor);
+	}
+	else if(v==4 && v2==7){
+	valor=(valor/1000);
+		printf("O resultado eh %0.3f moedas de Diamante",valor);
+	}
+	///////////////////////////////////////////////////////////////////
+	if(v==5 && v2==1){
+	valor=(valor*1000);
+		printf("O resultado eh %0.2f moedas de Cobre",valor);
+	}
+	else if(v==5 && v2==2){
+	valor=(valor*100);
+		printf("O resultado eh %0.2f moedas de Prata",valor);
+	}
+	else if(v==5 && v2==3){
+	valor=(valor*20);
+		printf("O resultado eh %0.2f moedas de Electro",valor);
+	}
+	else if(v==5 && v2==4){
+	valor=(valor*10);
+		printf("O resultado eh %0.2f moedas de Ouro",valor);
+	}
+	
+	else if(v==5 && v2==6){
+	valor=(valor/10);
+		printf("O resultado eh %0.3f moedas de Rubi",valor);
+	}
+	else if(v==5 && v2==7){
+	valor=(valor/100);
+		printf("O resultado eh %0.3f moedas de Diamante",valor);
+	}
+	///////////////////////////////////////////////////////////////////
+	if(v==6 && v2==1){
+	valor=(valor*10000);
+		printf("O resultado eh %0.2f moedas de Cobre",valor);
+	}
+	else if(v==6 && v2==2){
+	valor=(valor*1000);
+		printf("O resultado eh %0.2f moedas de Prata",valor);
+	}
+	else if(v==6 && v2==3){
+	valor=(valor*200);
+		printf("O resultado eh %0.2f moedas de Electro",valor);
+	}
+	else if(v==6 && v2==4){
+	valor=(valor*100);
+		printf("O resultado eh %0.2f moedas de Ouro",valor);
+	}
+	
+	else if(v==6 && v2==5){
+	valor=(valor*10);
+		printf("O resultado eh %0.2f moedas de Platina",valor);
+	}
+	else if(v==6 && v2==7){
+	valor=(valor/10);
+		printf("O resultado eh %0.3f moedas de Diamante",valor);
+	}
+	
+	///////////////////////////////////////////////////////////////////
+	if(v==7 && v2==1){
+	valor=(valor*100000);
+		printf("O resultado eh %0.2f moedas de Cobre",valor);
+	}
+	else if(v==7 && v2==2){
+	valor=(valor*10000);
+		printf("O resultado eh %0.2f moedas de Prata",valor);
+	}
+	else if(v==7 && v2==3){
+	valor=(valor*2000);
+		printf("O resultado eh %0.2f moedas de Electro",valor);
+	}
+	else if(v==7 && v2==4){
+	valor=(valor*1000);
+		printf("O resultado eh %0.2f moedas de Ouro",valor);
+	}
+	
+	else if(v==7 && v2==5){
+	valor=(valor*100);
+		printf("O resultado eh %0.2f moedas de Platina",valor);
+	}
+	else if(v==7 && v2==6){
+	valor=(valor*10);
+		printf("O resultado eh %0.2f moedas de Rubi",valor);
+	}
+	
+	///////////////////////////////////////////////////////////////
+	if((v==1 && v2==1)||(v==2 && v2==2)||(v==3 && v2==3)||(v==4 && v2==4)||(v==5 && v2==5)||(v==6 && v2==6)||(v==7 && v2==7)){
+		printf("\nOs valores sao equivalentes:)\nFim do Programa!!!\n");
+	
+}
+       return 0;
+        }
